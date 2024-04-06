@@ -1,0 +1,12 @@
+body{
+    font-family: arial,sans-serif;
+}
+#profile{
+    color:#ffffff;
+}
+.active-day{
+    color:#00cc00;
+}
+.inactive-day{
+    color:#cccccc;
+}

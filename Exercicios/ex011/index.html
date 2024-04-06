@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias HTML5</title>
+</head>
+<body>
+    <h1>Mídias</h1>
+        <h2>Imagens dinámicas</h2>
+            <p>tente abrir esse site em  vários dispositivos diferentes ou simplesmente aumenta e diminua o tamanho do seu navegador</p>
+
+            <picture>
+                <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+                <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+                <img src="imagens/foto-g.png" alt="Imagem flexível">
+            </picture>
+
+        <h2>Áudio</h2>
+            <p>Vamos aprender a reproduzir áudio com HTML5</p>
+    
+            <audio src="midia/Funky Carioca - Quincas Moreira.mp3" controls></audio>
+    
+            <p>Para fazer download da musica basta <a href="midia/Funky Carioca - Quincas Moreira.mp3" download="midia/Funky Carioca - Quincas Moreira.mp3" type="audio/mpeg" target="_blank" rel="external">Clicar aqui</a></p>
+
+            <a href="midia/Funky Carioca - Quincas Moreira.zip"> clica aqui</a>
+
+        <h2>Videos</h2>
+            <p>Vamos aprender a colocar videos em sites</p>
+
+            <p>Usando videos em um servido próprio</p>
+            <video controls width="500">
+                <source src="midia/Pexels-Rüveyda-20144591 (2160P) (1).mp4" type="video/mp4">
+                <source src="midia/Pexels-Rüveyda-20144591 (2160P) (1).webm" type="video/webm">
+                <p>Seu navegador não tem contabilidade para videos</p>
+            </video>
+            <p>Para download <a href="midia/Pexels-Rüveyda-20144591 (2160P) (1).mp4" download="midia/Pexels-Rüveyda-20144591 (2160P) (1).mp4" type="video/mp4" target="_blank"> clica aqui</a></p>
+
+            <p>Video em servido externo</p>
+            <iframe src="https://player.vimeo.com/video/914752495?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="500" height="281" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" title="Pexels-Rüveyda-20144591 (2160P) (1)"></iframe>
+            <p>testando agora com um video do youtube</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/hZZaw1d2fLQ?si=A4pZ2RltbsH-XG0W" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</html>

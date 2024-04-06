@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+body{
+    background-color: #8DE3E2;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    text-align: center;
+}
+p{
+    text-align: justify;
+}
+
+#class-id{
+    background-color: #629E9D;
+}
+.class-id{
+    background-color:#77BFBE;
+}
+
+#pse{
+    background-color: yellow;
+}
+.pse{
+    background-color: yellowgreen;
+}

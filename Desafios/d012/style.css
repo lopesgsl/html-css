@@ -10,7 +10,6 @@
 *{
     margin: 0;
     padding: 0;
-    font-size: 1em;
 }
 header{
     background-color: black;
@@ -21,11 +20,14 @@ header{
 }
 header h1{
     font-family: var(--font01);
-    font-size: 132px;
+    font-size: 187px;
     font-weight: bold;
+    line-height: 1em;
     font-variant: small-caps;
 }
-
+header p{
+    font-size: 16px;
+}
 a{
     color: white;
     text-decoration: none;
@@ -36,14 +38,11 @@ a:hover{
 }
 main{
     font-family: var(--font03);
-    font-size: 46px;
-    line-height: 92.8px;
-}
-main p{
-    max-width: 1600px;
+    line-height: 2em;
+    font-size: 66px;
 }
 .normal{
-    padding: 4.5vh;
+    padding: 4.2vh;
     padding-top: 10vh;
     padding-bottom: 10vh;
 }

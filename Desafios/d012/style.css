@@ -16,17 +16,17 @@ header{
     color: white;
     font-family: var(--font02);
     text-align: center;
-    padding: 50.5px;
+    padding: 2vh;
 }
 header h1{
     font-family: var(--font01);
-    font-size: 187px;
+    font-size: 9vw;
     font-weight: bold;
     line-height: 1em;
     font-variant: small-caps;
 }
 header p{
-    font-size: 16px;
+    font-size: 0,8vw;
 }
 a{
     color: white;
@@ -39,10 +39,10 @@ a:hover{
 main{
     font-family: var(--font03);
     line-height: 2em;
-    font-size: 66px;
+    font-size: 3.2vw;
 }
 .normal{
-    padding: 4.2vh;
+    padding: 2vw;
     padding-top: 10vh;
     padding-bottom: 10vh;
 }
@@ -50,6 +50,9 @@ main{
     padding: 5vh;
     padding-top: 10vh;
     padding-bottom: 10vh;
+    box-shadow: inset 6px 6px 14px 0px black;
+    background-size: cover;
+    background-attachment: fixed;
 }
 .imagens p{
     display: inline-block;
@@ -60,15 +63,17 @@ main{
 }
 #img01{
     background-image: url(imagens/background001.jpg);
+    background-size: cover;
 }
 #img02{
     background-image: url(imagens/background002.jpg);
+    background-size: cover;
 }
 footer{
     background-color: black;
     color: white;
     text-align: center;
-    font-size: 16px;
+    font-size: 0.7vw;
     font-family: var(--font02);
-    padding: 10px;
+    padding: 0.5vh;
 }

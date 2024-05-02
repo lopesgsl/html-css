@@ -5,14 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>iframe</title>
     <style>
-        iframe{
-            height: 450px;
-            width: 450px;
+        body{
+            margin: 20px;
         }
+        #table,#iframe-nav{
+            display: block;
+            margin: auto;
+            width: 70vw;
+            height: 400px;
+        }
+        
     </style>
 </head>
 <body>
-    <h1>Testando iframes</h1>\
+    <h1>Testando iframes</h1>
     <h2>Sem iframe</h2>
     <p>
         Acessando o site do <a href="cursoemvideo.com">CursoemVideo</a> para aprender a programar
@@ -22,7 +28,7 @@
     <p>
         Acessando o site do 
 
-        <iframe src="https://www.cursoemvideo.com" frameborder="0" width="500px" height="500px" scrolling="no">
+        <iframe src="https://www.cursoemvideo.com" frameborder="0">
             <a href="https://www.cursoemvideo.com" target="_blank">Curso em video</a>
         </iframe> 
 
@@ -33,11 +39,36 @@
     <p>
         E tambem acesse o repositorio 
         
-        <iframe src="https://github.com/gustavoguanabara/html-css/tree/master/aulas-pdf" frameborder="0">
-            <a href="https://github.com/gustavoguanabara/html-css/tree/master/aulas-pdf" target="_blank">Github</a>
+        <iframe src="https://www.cursoemvideo.com" frameborder="0" scrolling="no" width="500px" height="500px">
+            <a href="https://www.cursoemvideo.com" target="_blank">Github</a>
         </iframe>
 
         para encontra materiais de estudo
     </p>
+
+    <h2>Colocando iframes em arquivos locais</h2>
+    <p>
+        Veja essa tabela para tira duvidas
+    </p>
+    <iframe src="../ex020/index.html" frameborder="0" id="table">
+        <p>Seu navegador não suporta iframes</p>
+    </iframe>
+
+    <h2>Navegando em iframes</h2>
+    <p>Para escolhe qual arquivo deseja exibir clique em um dos links abaixo</p>
+    <ul>
+        <li>
+            <a href="../ex019/index.html" target="iframe-nav">Fundo com imagens</a>
+        </li>
+        <li>
+            <a href="../ex016/exemplo.html" target="iframe-nav">Pseudo-elementos</a>
+        </li>
+        <li>
+            <a href="../ex014/font01.html" target="iframe-nav">Fontes</a>
+        </li>
+    </ul>
+    <iframe src="https://www.cursoemvideo.com" name="iframe-nav" frameborder="1" id="iframe-nav" sandbox="sandbox" referrerpolicy="no-referer">
+        <p>Seu navegador não tem suporter a iframes</p>
+    </iframe>
 </body>
 </html>

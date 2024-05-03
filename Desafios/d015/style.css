@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+body{
+    display: flex;
+    background-image: url(pacote-d013/imagens/fundo-madeira.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+#main{
+    display: flex;
+}
+#iframe{
+    
+}
+iframe{
+    width: 250px;
+    height: 500px;
+}
+#nav{
+    display: flex;
+}
+.nav-icon{
+    padding: 5px;
+}
+.icon-rs{
+    border-radius: 50%;
+    width: 50px;
+}
+.icon-rs:hover{
+    border: 1px solid white;
+    scale: 1.1;
+}

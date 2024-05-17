@@ -80,17 +80,36 @@
             <legend>Contato</legend>
             <p>
                 <label for="iemail">Email: </label>
-                <input type="email" name="email" id="iemail" required autocomplete="email">
+                <input type="email" name="email" id="iemail" required autocomplete="email" placeholder="exemplo@gmail.com">
             </p>
             <p>
                 <label for="itel">Telefone: </label>
-                <input type="tel" name="tel" id="itel" required autocomplete="tel">
+                <input type="tel" name="tel" id="itel" required autocomplete="tel" placeholder="(xx)xxxx-xxxx">
             </p>
             <p>
                 <input type="submit" value="Enviar">
                 <input type="reset" value="Limpar">
             </p>
-        </fielset>
+        </fieldset>
+    </form>
+    <h2>Checbox e Radio</h2>
+    <h3>Checbox</h3>
+    <form action="cadastro.php">
+        <fieldset>
+            <legend>Esporte favorito</legend>
+            <input type="checkbox" name="fut" id="ifut" checked><label for="ifut">Futebol</label><br>
+            <input type="checkbox" name="vol" id="ivol"><label for="ivol">Volei</label><br>
+            <input type="checkbox" name="bas" id="ibas"><label for="ibas">Basquete</label><br>
+            <input type="checkbox" name="Fis" id="ifis"><label for="ifis">Fisioculturismo</label><br>
+        </fieldset>
+    </form>
+    <h3>Radio</h3>
+    <form action="cadastro.php">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="isxm"><label for="isxm">Masculino</label><br>
+            <input type="radio" name="sexo" id="isxf"><label for="isxf">Feminino</label>
+        </fieldset>
     </form>
 </body>
 </html>

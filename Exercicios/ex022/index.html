@@ -9,7 +9,7 @@
 <body>
     <h1>Exemplo basico de um formulario.</h1>
     <br>
-    <form action="cadastro.php" method="post" autocomplete="off">
+    <form action="cadastro.php" method="get" autocomplete="off">
         <label for="nome">Nome: </label>
         <input type="text" name="nome" id="nome">
         <br>
@@ -18,11 +18,19 @@
         <br>
         <input type="submit" value="Envia">
     </form>
-    <h2>Password</h2>
-    <form action="cadastro.php">
+    <h2>Password + configurações de input</h2>
+    <form action="cadastro.php" method="post" autocomplete="off">
+        <p>
+            <label for="iuse">Usuario: </label>
+            <input type="text" name="use" id="iuse" required minlength="5" maxlength="18" placeholder="user1234">
+        </p>
         <p>
             <label for="isenha">Senha: </label>
-            <input type="password" name="senha" id="isenha">
+            <input type="password" name="senha" id="isenha" required minlength="8" maxlength="20" placeholder="1A2B3D4E">
+        </p>
+        <p>
+            <input type="submit" value="LOGIN">
+            <input type="reset" value="Limpar">
         </p>
     </form>
 </body>

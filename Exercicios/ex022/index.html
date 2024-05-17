@@ -19,17 +19,45 @@
         <input type="submit" value="Envia">
     </form>
     <h2>Password + configurações de input</h2>
-    <form action="cadastro.php" method="post" autocomplete="off">
+    <form action="cadastro.php" method="post" autocomplete="on">
         <p>
             <label for="iuse">Usuario: </label>
-            <input type="text" name="use" id="iuse" required minlength="5" maxlength="18" placeholder="user1234">
+            <input type="text" name="use" id="iuse" required minlength="5" maxlength="18" placeholder="user1234" autocomplete="username">
         </p>
         <p>
             <label for="isenha">Senha: </label>
-            <input type="password" name="senha" id="isenha" required minlength="8" maxlength="20" placeholder="1A2B3D4E">
+            <input type="password" name="senha" id="isenha" required minlength="8" maxlength="20" placeholder="1A2B3D4E" autocomplete="current-password">
         </p>
         <p>
             <input type="submit" value="LOGIN">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    <h2>Number, month, date e time</h2>
+    <form action="cadastro.php" method="post">
+        <p>
+            <label for="iname">Nome: </label>
+            <input type="text" name="name" id="iname" required placeholder="Nome completo">
+        </p>
+        <p>
+            <label for="inota">Nota: </label>
+            <input type="number" name="nota" id="inota" min="0" max="10" step="0.1" placeholder="0 a 10">
+        </p>
+        <p>
+            <label for="imes">Períado letivo</label>
+            <input type="month" name="mes" id="imes">
+        </p>
+        <p>
+            <label for="idia">Dia da prova</label>
+            <input type="date" name="dia" id="idia">
+        </p>
+        <p>
+            <label for="itime">Hora da prova: 
+            </label>
+            <input type="time" name="time" id="itime">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
         </p>
     </form>

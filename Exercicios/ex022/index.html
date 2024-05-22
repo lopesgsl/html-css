@@ -65,10 +65,6 @@
                 <input type="time" name="time" id="itime" required >
             </p>
             <p>
-                <label for="iprova">Aquivo da prova: </label>
-                <input type="file" name="prova" id="iprova">
-            </p>
-            <p>
                 <input type="submit" value="Enviar">
                 <input type="reset" value="Limpar">
             </p>
@@ -101,7 +97,12 @@
             <input type="checkbox" name="vol" id="ivol"><label for="ivol">Volei</label><br>
             <input type="checkbox" name="bas" id="ibas"><label for="ibas">Basquete</label><br>
             <input type="checkbox" name="Fis" id="ifis"><label for="ifis">Fisioculturismo</label><br>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
         </fieldset>
+        
     </form>
     <h3>Radio</h3>
     <form action="cadastro.php">
@@ -109,6 +110,79 @@
             <legend>Sexo</legend>
             <input type="radio" name="sexo" id="isxm"><label for="isxm">Masculino</label><br>
             <input type="radio" name="sexo" id="isxf"><label for="isxf">Feminino</label>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </fieldset>
+    </form>
+    <h2>Color, ranger e files</h2>
+    <form action="cadastro.php" method="psot">
+        <fieldset>
+            <legend>Sua camisa personalizada</legend>
+            <p>
+                <label for="icor">Cor: </label>
+                <input type="color" name="cor" id="icor">
+            </p>
+            <p>
+                <label for="iranger">Nivel de Granulação: </label>
+                <input type="range" name="ranger" id="iranger">
+            </p>
+            <p>
+                <label for="ifile">Molde da camisa: </label>
+                <input type="file" name="file" id="ifile">
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </fieldset>
+    </form>
+    <h2>Select, datlist e textarea</h2>
+    <form action="cadastro.php" method="post">
+        <fieldset>
+            <legend>Entrevista de emprego</legend>
+            <p>
+                <label for="iestado">Estado: </label>
+                <select name="estado" id="iestado">
+                    <option value="">---Escolha---</option>
+                    <optgroup label="Nordeste">
+                        <option value="PB">Paraiba</option>
+                        <option value="PE">Pernabuco</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                    </optgroup>
+                    <optgroup label="Sudeste">
+                        <option value="SP">São Paulo</option>
+                        <option value="RJ">Rio de Jeneiro</option>
+                        <option value="MG">Minas Gerais</option>
+                    </optgroup>
+                    <optgroup label="Norte">
+                        <option value="AC">Acre</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="MA">Maranhão</option>
+                    </optgroup>
+                </select>
+            </p>
+            <p>
+                <label for="icargo">Cargo: </label>
+                <input type="text" name="cargo" id="icargo" list="lst">
+                <datalist id="lst">
+                    <option value="Administração"></option>
+                    <option value="Desenvolvedor"></option>
+                    <option value="Contabilidade"></option>
+                    <option value="Psicologa"></option>
+                </datalist>
+            </p>
+            <p>
+                <label for="itext">
+                    Escrava a seguir qual a sua motivação: 
+                </label><br>
+                <textarea name="text" id="itext" cols="30" rows="10"></textarea>
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
         </fieldset>
     </form>
 </body>

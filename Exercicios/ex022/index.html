@@ -165,7 +165,7 @@
             </p>
             <p>
                 <label for="icargo">Cargo: </label>
-                <input type="text" name="cargo" id="icargo" list="lst">
+                <input type="text" name="cargo" id="icargo" list="lst" placeholder="Vaga de seu desejo">
                 <datalist id="lst">
                     <option value="Administração"></option>
                     <option value="Desenvolvedor"></option>
@@ -185,5 +185,60 @@
             </p>
         </fieldset>
     </form>
+    <h2>Output</h2>
+    <h3>Calculadora</h3>
+    <form action="cadastro.php">
+        <fieldset>
+            <legend>Calculadora de soma</legend>
+            <p>
+                <input type="number" name="n1" id="in1" oninput="soma.innerHTML = Number(n1.value)+Number(n2.value)">
+                &#43;
+                <input type="number" name="n2" id="in2" oninput="soma.innerHTML = Number(n1.value)+Number(n2.value)">
+                &#61;
+                <output id="soma">0</output>
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </fieldset>
+    </form>
+    <h3>Ranger minimalista</h3>
+    <form action="cadastro.php">
+        <fieldset>
+            <legend>Descreva seu nivel de satisfação</legend>
+            <input type="range" name="rg" id="irg" min="0" max="10" value="10" oninput="sat.innerHTML = Number(irg.value)">
+            <output id="sat">10</output>/10
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </fieldset>
+    </form>
+    <h3>Sua idade</h3>
+    <form action="cadastro.php">
+        <fieldset>
+            <legend>Descobra sua idade</legend>
+            <p>
+                <label for="idade">Digite o ano em que nasceu: </label>
+                <input type="number" name="idade" id="idade" min="1900" max="2024" oninput="calIdade()">
+            </p>
+            <p>
+                <label for="nrc">Sua idade é: </label>
+                <output id="nrc"></output>
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </fieldset>
+    </form>
 </body>
+<script>
+    function calIdade(){
+        let atual= new Date().getFullYear()
+        nrc.innerHTML=Number(atual)-Number(idade.value)
+
+    }
+</script>
 </html>

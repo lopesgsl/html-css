@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+/* versão para impressora */
+
+html{
+    font-family: 'Courier New', Courier, monospace;
+    margin: 10px;
+    padding: 10px;
+    line-height: 1.5em;
+    font-size: 1.5em;
+    width: 100%;
+}
+body{
+    margin: 10%;
+}
+header{
+    text-align: center;
+}
+menu{
+    display: none;
+}
+article{
+    text-align: justify;
+}
+article::after{
+    text-align: center;
+    content: "Para acessar essa pagina na WEB confira www.meusite.com";
+}
+footer{
+    display: none;
+}

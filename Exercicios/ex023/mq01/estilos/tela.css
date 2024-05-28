@@ -1,0 +1,38 @@
+@charset "UTRF-8";
+
+/* Versão para monitores */
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header{
+    padding: 5px;
+    background-color: gray;
+    text-align: center;
+}
+menu li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+    background-color: darkgray;
+    border-radius: 5px;
+    margin: 3px;
+}
+main{
+    padding: 20px 15%;
+    text-align: justify;
+}
+section{
+    padding: 10px;
+}
+footer{
+    position: fixed;
+    bottom: o;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 3px;
+    bottom: 0px;
+}

@@ -12,11 +12,13 @@ html, body{
     height: 100vh;
 }
 body{
+    position: relative;
     background-image: url(imagens/Default_A_picturesque_village_with_rolling_hills_and_a_gentle_1_2a33c3a9-2dfa-4f2f-b373-8ec29f6bcd31_0.jpg);
     background-size: cover;
 }
 main{
     position: absolute;
+    display: flex;
     top: 50%;
     margin: auto;
     transform: translate(4%, -50%);
@@ -43,6 +45,7 @@ h1{
     height: 24px;
 }
 .login{
+    background-color: greenyellow;
     width: 250px;
     height: 24px;
     border: none;
@@ -75,6 +78,10 @@ a:hover{
     scale: 1.1;
     border: 5px white;
 }
+aside{
+    float: bottom;
+}
 #about{
     display: none;
+    float: bottom;
 }

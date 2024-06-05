@@ -1,5 +1,8 @@
 @charset "UTF-8";
 
+body{
+    background-position: right;
+}
 main{
     display: flex;
     left: 50%;
@@ -12,8 +15,11 @@ main{
     border-right: 1px solid #fff;  
     border-radius: 40px;
 }
-form{
-
+main > form{
+    float: right;
+}
+main > aside{
+    float: left;
 }
 #about > h1{
     text-align: center;
